@@ -1,0 +1,4 @@
+cells = cbind(WBC, PLT, HCT)           
+cells = replace(cells, cells==0, NA)   
+
+plot(cells, type="o", pch=19, xlab="day", main="")  
